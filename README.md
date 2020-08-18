@@ -42,7 +42,7 @@ Consumer of Fancy and Svelte
 
 ```svelte
 <script>
-	import FancyWidget from './FancyWidget.svelte'
+import FancyWidget from './FancyWidget.svelte'
 </script>
 
 <a-mixin svelte="{{component: FancyWidget, gather: () => ({ parent: this.el.object3D.parent }) }}" />

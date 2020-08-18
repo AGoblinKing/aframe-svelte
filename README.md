@@ -2,24 +2,26 @@
 
 Ever want to load a svelte component in aframe as a component? No? Well I did it anyhow.
 
+![](./docs/img/hmm.gif)
+
 ## API
 
 ```js
-	multiple: true,
-	schema: {
-		props: {
-			// pass props to svelte component
-			default: {},
-		},
-		// the svelte component
-		component: {},
-		// fn to run to gather props
-		gather: {
-			default() {
-				return this.data.props
-			},
+multiple: true,
+schema: {
+	props: {
+		// pass props to svelte component
+		default: {},
+	},
+	// the svelte component
+	component: {},
+	// fn to run to gather props
+	gather: {
+		default() {
+			return this.data.props
 		},
 	},
+},
 ```
 
 ## Quick Start
@@ -49,5 +51,7 @@ Consumer of Fancy and Svelte
 ### [goblin-life](https://goblin.life/)
 
 Used for instantiating remote entity mixins in [goblin.life](https://goblin.life)!
+
+### Playlist
 
 - [Spotify](https://open.spotify.com/playlist/37i9dQZF1E8U06Q5kJyehH?si=1-KQhYu9RvmUDCnFXCAwlw)

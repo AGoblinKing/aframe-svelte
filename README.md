@@ -26,6 +26,8 @@ schema: {
 
 ## Quick Start
 
+[REPL Example](https://svelte.dev/repl/82076000aeec4606be934ad88b22efa9?version=3.24.1)
+
 FancyWidget.svelte
 
 ```svelte

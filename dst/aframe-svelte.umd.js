@@ -1,0 +1,2 @@
+!function(e){"function"==typeof define&&define.amd?define(e):e()}((function(){"use strict";AFRAME.registerComponent("svelte",{multiple:!0,schema:{props:{default:{}},component:{},gather:{default(){return this.data.props}}},init(){requestAnimationFrame(()=>{this.svelte=new this.data.component({target:this.el,props:this.data.gather.call(this)})})},remove(){this.svelte.$destroy(),delete this.svelte}})}));
+//# sourceMappingURL=aframe-svelte.umd.js.map

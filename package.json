@@ -1,6 +1,6 @@
 {
 	"name": "aframe-svelte",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Instantiate svelte components as an aframe component. Useful for mixin magic.",
 	"main": "dst/aframe-svelte.cjs.js",
 	"module": "dst/aframe-svelte.es.js",

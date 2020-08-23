@@ -42,10 +42,20 @@ Consumer of Fancy and Svelte
 
 ```svelte
 <script>
+import { registerSvelte, registerGather } from "aframe-svelte"
 import FancyWidget from './FancyWidget.svelte'
+
+registerSvelte("FancyWidget", FancyWidget)
+
+// Gather and return props after instantiating
+registerGather("Parent", function() {
+	return {
+		parent: "foobar"
+	}
+})
 </script>
 
-<a-mixin svelte="{{component: FancyWidget, gather: () => ({ parent: this.el.object3D.parent }) }}" />
+<a-mixin svelte="component: FancyWidget; gather: Parent" />
 ```
 
 ## Usage

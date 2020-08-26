@@ -1,7 +1,7 @@
 const SVELTE_CACHE = {}
 const SVELTE_GATHER = {}
 
-export function registerSvelte(key: string, svelte = undefined) {\
+export function registerSvelte(key: string, svelte = undefined) {
 	SVELTE_CACHE[key] = svelte
 }
 
